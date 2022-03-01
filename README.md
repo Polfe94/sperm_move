@@ -1,4 +1,4 @@
-# sperm_move
+# Sperm motility multivariate analysis: sperm_move
 Code for sperm motility multivariate analysis. If you use this code, make sure to cite this repository, as well as Predicting fertility from sperm motility landscapes (DOI: ). 
 
 # citation 1 (paper)
