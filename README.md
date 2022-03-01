@@ -27,5 +27,5 @@ These scripts return a t-SNE object (or a list of them, if multiple perplexities
 ### (III) Bayesian modelling
 After a t-SNE object has been computed (see above), this embedding can be used in models.R. Briefly, this script computes the proportion of sperm of each boar in the landscape's clusters, and uses this data to produce several models. The models are compared by means of leave-one-out crossvalidation in the script, and some basic visualization is provided in the script.
 
-### Contact
-For any troubleshooting, please contact me at pfernandez@ceab.csic.es.
+### Troubleshooting
+If any problem arises, please submit a new issue.
