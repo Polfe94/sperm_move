@@ -11,7 +11,7 @@ Before proceeding to use the code, make sure you have installed the following pa
 - rstanarm (v2.21.1)
 - bigMap (v4.5.3; 10.5281/zenodo.5506574) 
 - dplyr (v1.0.7)
-- parallel
+- parallel (v4.0.2)
 
 Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install FIt-SNE (not needed unless you want to get t-SNE embedding by alternative means than those offered in the bigMap R package).
 
