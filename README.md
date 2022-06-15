@@ -15,7 +15,7 @@ Before proceeding to use the code, make sure you have installed the following pa
 
 Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install FIt-SNE (not needed unless you want to get t-SNE embedding by alternative means than those offered in the bigMap R package).
 
-For an UMAP based embedding, the code provided in this repository has the following requirements:
+For an UMAP (https://umap-learn.readthedocs.io/en/latest/index.html) based embedding, the code provided in this repository has the following requirements:
 
 #### Python (v3.6.8)
 - numpy (v1.18.1)
