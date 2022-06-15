@@ -13,11 +13,13 @@ Before proceeding to use the code, make sure you have installed the following pa
 - dplyr (v1.0.7)
 - parallel
 
+Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install FIt-SNE (not needed unless you want to get t-SNE embedding by alternative means than those offered in the bigMap R package).
+
+For an UMAP based embedding, the code provided in this repository has the following requirements:
+
 #### Python (v3.6.8)
 - numpy (v1.18.1)
 - umap (v0.4.6)
-
-Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install FIt-SNE (not needed unless you want to get t-SNE embedding by alternative means than those offered in the bigMap R package).
 
 ## How to use
 After installing all necessary requirements (see above), five scripts are provided to reproduce the work performed in Fernandez-Lopez, P. et al (2022). Data used in this paper is available in Mendeley data (DOI: 10.17632/jd38jhxpg6.2). If you use the data, please cite the corresponding repository and the related paper. Scripts can be used on other data (motility related or otherwise), altough some adaptations to code might be necessary. After running any of the scripts, make sure to check the paths to load the data and source the code. 
