@@ -22,7 +22,7 @@ For an UMAP (https://umap-learn.readthedocs.io/en/latest/index.html) based embed
 - umap (v0.4.6)
 
 ## How to use
-After installing all necessary requirements (see above), five scripts are provided to reproduce the work performed in Fernandez-Lopez, P. et al (2022). Data used in this paper is available in Mendeley data (DOI: 10.17632/jd38jhxpg6.2). If you use the data, please cite the corresponding repository and the related paper. Scripts can be used on other data (motility related or otherwise), altough some adaptations to code might be necessary. After running any of the scripts, make sure to check the paths to load the data and source the code. 
+After installing all necessary requirements (see above), five scripts are provided to reproduce the work performed in Fernandez-Lopez, P. et al (2022). Data used in this paper is available in Mendeley data (DOI: 10.17632/jd38jhxpg6.2). If you use the data, please cite the corresponding repository and the related paper. Scripts can be used on other data (motility related or otherwise), altough some adaptations to code might be necessary. After running any of the scripts, make sure to check the paths to load the data and source the code, as well as the path to save the results to. 
 
 ### (I) FUNCTIONS.R
 This script provides some wrap functions to adapt t-SNE objects to bigMap package, automated modelling using rstanarm, and others. Necessary libraries are also load at the beggining of the script. It is encouraged to source this document before running any other script.
@@ -32,8 +32,14 @@ The first step is to compute the t-SNE coordinates. BHtSNE.R and FItSNE.R are re
 
 These scripts return a t-SNE object (or a list of them, if multiple perplexities are used) that can be further explored by bigMap package, both for additional analysis and visualization.
 
+#### UMAP computation
+As an alternative, the 2D embedding can be computed using UMAP. Similarly to the previous point, run umap.py using the corresponding data (Xw.csv), and with the resulting embedding, run umap.R to convert the umap object to one compatible with the bigMap package. 
+
 ### (III) Bayesian modelling
-After a t-SNE object has been computed (see above), this embedding can be used in models.R. Briefly, this script computes the proportion of sperm of each boar in the landscape's clusters, and uses this data to produce several models. The models are compared by means of leave-one-out crossvalidation in the script, and some basic visualization is provided in the script.
+After a t-SNE (or UMAP) object has been computed (see above), this embedding can be used in models.R. Briefly, this script computes the proportion of sperm of each boar in the landscape's clusters, and uses this data to produce several models. The models are compared by means of leave-one-out crossvalidation in the script, and some basic visualization is provided in the script.
+
+### Plotting the results
+Some basic plots to explore the (t-SNE or UMAP) landscape can be found in landscape_plots.R, that shows how the basic functionality of bigMap package works. In models.R, there is also some visualization regarding to the models' coefficients and predictions. 
 
 ### Troubleshooting
 If any problem arises, please submit a new issue.
