@@ -17,6 +17,9 @@ Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install
 
 For an UMAP (https://umap-learn.readthedocs.io/en/latest/index.html) based embedding, the code provided in this repository has the following requirements:
 
+#### R (v4.0.2)
+- jsonlite (v1.7.1)
+
 #### Python (v3.6.8)
 - numpy (v1.18.1)
 - umap (v0.4.6)
