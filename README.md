@@ -22,7 +22,7 @@ For an UMAP (https://umap-learn.readthedocs.io/en/latest/index.html) based embed
 
 #### Python (v3.6.8)
 - numpy (v1.18.1)
-- umap (v0.4.6)
+- umap-learn (v0.4.6)
 
 ## How to use
 After installing all necessary requirements (see above), five scripts are provided to reproduce the work performed in Fernandez-Lopez, P. et al (2022). Data used in this paper is available in Mendeley data (DOI: 10.17632/jd38jhxpg6.2). If you use the data, please cite the corresponding repository and the related paper. Scripts can be used on other data (motility related or otherwise), altough some adaptations to code might be necessary. After running any of the scripts, make sure to check the paths to load the data and source the code, as well as the path to save the results to. 
