@@ -8,10 +8,20 @@ Code for sperm motility multivariate analysis. If you use this code, make sure t
 Before proceeding to use the code, make sure you have installed the following packages (and their corresponding dependencies):
 
 #### R (v4.0.2)
+Core scripts:
 - rstanarm (v2.21.1)
 - bigMap (v4.5.3; 10.5281/zenodo.5506574) 
 - dplyr (v1.0.7)
 - parallel (v4.0.2)
+
+Plot scripts:
+- ggplot2 (v3.3.6)
+- reshape2 (v1.4.4)
+- shadowtext (v0.1.2)
+- gridExtra (v2.3)
+- ggpubr (v0.4.0)
+- viridis (v0.6.2)
+- mixOmics (v6.19.4) optional for the color.jet palette.
 
 Also, follow the instructions in https://github.com/KlugerLab/FIt-SNE to install FIt-SNE (not needed unless you want to get t-SNE embedding by alternative means than those offered in the bigMap R package).
 
@@ -41,7 +51,12 @@ As an alternative, the 2D embedding can be computed using UMAP. Similarly to the
 ### (III) Bayesian modelling
 After a t-SNE (or UMAP) object has been computed (see above), this embedding can be used in models.R. Briefly, this script computes the proportion of sperm of each boar in the landscape's clusters, and uses this data to produce several models. The models are compared by means of leave-one-out crossvalidation in the script, and some basic visualization is provided in the script.
 
-### Plotting the results
+### Plots
+
+#### Plots from "Predicting fertility from sperm motility landscapes"
+Download the data in Mendeley Data repository (DOI: 10.17632/jd38jhxpg6.2) and check the scripts in plots folder.
+
+#### Visualization for new models and embeddings
 Some basic plots to explore the (t-SNE or UMAP) landscape can be found in landscape_plots.R, that shows how the basic functionality of bigMap package works. In models.R, there is also some visualization regarding to the models' coefficients and predictions. 
 
 ### Troubleshooting
