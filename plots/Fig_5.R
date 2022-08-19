@@ -1,5 +1,5 @@
 setwd('~/sperm_move/data')
-
+source('../src/PLOT_FUNCTIONS.R')
 lns <- read.csv('cluster_capacitated_borders.csv')
 xyz <- read.csv('pakde_capacitated.csv')
 sperm <- read.csv('capacitated_dataset.csv')

@@ -1,4 +1,5 @@
 setwd('~/sperm_move/data')
+source('../src/PLOT_FUNCTIONS.R')
 model <- read.csv('model_draws.csv')
 model_quantiles <- read.csv('model_quantiles.csv')
 
