@@ -1,11 +1,13 @@
+setwd('~/sperm_move/')
+
 ## load functions and libraries
-source('~/path/to/FUNCTIONS.R')
+source('./src/FUNCTIONS.R')
 
 ## load sperm motility data
-load('~/path/to/sperm.RData')
+sperm <- read.csv('./data/sperm_data.csv')
 
 ## load fertility data
-f <- read.csv('~/path/to/fertility_data.csv')
+f <- read.csv('./data/fertility_data.csv')
 
 ## load previously computed tsne (check BHtSNE.R and FItSNE.R)
 load('~/path/to/tsne.RData')

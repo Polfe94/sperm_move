@@ -1,8 +1,10 @@
+setwd('~/sperm_move/')
+
 ## load functions and libraries
-source('path/to/FUNCTIONS.R')
+source('./src/FUNCTIONS.R')
 
 ## load sperm motility data
-load('~/path/to/sperm.RData')
+sperm <- read.csv('./data/sperm_data.csv')
 
 # variables to compute t-SNE with
 vars <- c('VCL','VSL','ALH','BCF')
@@ -13,10 +15,11 @@ Xw <- bdm.data(df)[[1]][,]
 colnames(Xw) <- vars
 
 # +++ load UMAP output
-umap <- rjson::fromJSON(file = '~/path/to/umap.json')
+umap <- jsonlite::fromJSON(file = '~/path/to/umap.json')
+# umap <- rjson::fromJSON(file = '~/path/to/umap.json')
 
 ppx <- c(64, 320, 639, 3197, 6393)
-percent <- (0.1, 0.5, 1, 5, 10)
+percent <- c(0.1, 0.5, 1, 5, 10)
 
 umap.list <- lapply(seq_along(umap), function(u)
 {

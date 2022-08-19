@@ -1,5 +1,7 @@
+setwd('~/sperm_move/')
+
 ## load sperm motility data
-load('~/path/to/sperm.RData')
+sperm <- read.csv('./data/sperm_data.csv')
 
 # variables to compute t-SNE with
 vars <- c('VCL','VSL','ALH','BCF')

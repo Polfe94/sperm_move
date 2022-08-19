@@ -1,8 +1,10 @@
-## load FUNCTIONS.R
-source('~/path/to/FUNCTIONS.R')
+setwd('~/sperm_move/')
 
-## load capacitated dataset
-load('~/path/to/cap_motdata.RData')
+## load functions and libraries
+source('./src/FUNCTIONS.R')
+
+## load sperm motility data
+cap_motdata <- read.csv('./data/cap_motdata.csv')
 
 # apply whitening to data
 Xw <- bdm.data(cap_motdata[, 1:4])[[1]][, ]

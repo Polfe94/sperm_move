@@ -1,5 +1,5 @@
 ## load functions and libraries
-source('~/path/to/FUNCTIONS.R')
+source('~/sperm_move/src/FUNCTIONS.R')
 
 ## load FIt-SNE
 source('~/FitSNE/fast_tsne.R')
@@ -7,7 +7,7 @@ source('~/FitSNE/fast_tsne.R')
 FAST_TSNE_SCRIPT_DIR <- '~/path/to/FitSNE/'
 
 ## load sperm motility data
-load('~/path/to/sperm.RData')
+sperm <- read.csv('~/sperm_move/data/sperm_data.csv')
 
 # variables to compute t-SNE with
 vars <- c('VCL','VSL','ALH','BCF')
