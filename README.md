@@ -16,6 +16,7 @@ Core scripts:
 
 Plot scripts:
 - ggplot2 (v3.3.6)
+- bayesplot (v1.9.0)
 - reshape2 (v1.4.4)
 - shadowtext (v0.1.2)
 - gridExtra (v2.3)
