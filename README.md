@@ -42,7 +42,7 @@ After installing all necessary requirements (see above), five scripts are provid
 This script provides some wrap functions to adapt t-SNE objects to bigMap package, automated modelling using rstanarm, and others. Necessary libraries are also load at the beggining of the script. It is encouraged to source this document before running any other script.
 
 ### (II) t-SNE computation
-The first step is to compute the t-SNE coordinates. BHtSNE.R and FItSNE.R are ready to run on the sperm.RData dataset (DOI: 10.17632/jd38jhxpg6.2). They can be adapted to run on other datasets. For the capacitated sperm dataset (cap_motdata.RData), please run capacitated_tSNE.R instead.
+The first step is to compute the t-SNE coordinates. BHtSNE.R and FItSNE.R are ready to run on the sperm.csv dataset (DOI: 10.17632/jd38jhxpg6.2). They can be adapted to run on other datasets. For the capacitated sperm dataset (cap_motdata.csv), please run capacitated_tSNE.R instead.
 
 These scripts return a t-SNE object (or a list of them, if multiple perplexities are used) that can be further explored by bigMap package, both for additional analysis and visualization.
 
