@@ -11,7 +11,7 @@ ggplot2::theme_set(ggplot2::theme_classic() %+replace% ggplot2::theme(axis.ticks
                                                                       axis.text = element_text(color = 'black', size = 15),
                                                                       legend.text = element_text(color = 'black', size = 15),
                                                                       legend.title = element_text(color = 'black', size = 16),
-                                                                      plot.title = element_text(color = 'black', size = 18),
+                                                                      plot.title = element_text(color = 'black', size = 18, face = 'bold'),
                                                                       strip.text = element_text(color = 'black', size = 15)))
 
 casa <- qMap(sperm[, c('x','y')], sperm[, c('VCL', 'VSL', 'ALH', 'BCF', 'Type', 'VAP', 'LIN', 'STR', 'WOB')],
