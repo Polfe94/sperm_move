@@ -90,7 +90,7 @@ qMap <- function(xy, mapping_data,quant = 8, qmap.pltt = mixOmics::color.jet,
      if(!length(labels)) labels <- colnames(mapping_data)
      
      pl <- vector('list', ncol(mapping_data))
-     for(i in seq_len(sum(colnames(mapping_data) %notin% c('x', 'y')))){
+     for(i in seq_len(sum(!colnames(mapping_data) %in% c('x', 'y')))){
           
           
           if(i %in% which.factor){
