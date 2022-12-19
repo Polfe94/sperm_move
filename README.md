@@ -1,8 +1,12 @@
 # Sperm motility multivariate analysis: sperm_move
-Code for sperm motility multivariate analysis. If you use this code, make sure to cite this repository, as well as Predicting fertility from sperm motility landscapes (DOI: ). 
+Code for sperm motility multivariate analysis. If you use this code, make sure to cite this repository, as well as Predicting fertility from sperm motility landscapes (https://doi.org/10.1038/s42003-022-03954-0). 
 
-# citation 1 (paper)
-# citation 2 (DOI: 10.17632/jd38jhxpg6.2)
+## References (paper)
+If you use the code provided in this repository, please make sure to properly cite:
+
+Fernández-López, P., Garriga, J., Casas, I. et al. Predicting fertility from sperm motility landscapes. Commun Biol 5, 1027 (2022). https://doi.org/10.1038/s42003-022-03954-0
+
+Fernández-López, Pol (2022), “Data used in Predicting fertility from sperm motility landscapes”, Mendeley Data, V5, doi: 10.17632/jd38jhxpg6.5
 
 ## Dependencies
 Before proceeding to use the code, make sure you have installed the following packages (and their corresponding dependencies):
